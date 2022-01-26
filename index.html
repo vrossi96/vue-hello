@@ -18,7 +18,7 @@
          <div id="main-row" class="row align-content-center">
             <div class="col-6 offset-3">
                <!-- Input -->
-               <div class="row justify-content-between text-center">
+               <div class="row justify-content-between text-center border-bottom-0 py-4">
                   <div class="col">
                      <input type="text" placeholder="Nome" v-model="userName">
                   </div>
@@ -27,12 +27,12 @@
                   </div>
                </div>
                <!-- Display -->
-               <div class="row">
+               <div class="row pb-4">
                   <div class="col-12 text-center py-3">
                      <h1>Ciao {{ userName }}!</h1>
                   </div>
                   <div class="col-12">
-                     <img src="" alt="Immagine Utente">
+                     <img class="w-100" :src="userPic" alt="Immagine Utente">
                   </div>
                </div>
             </div>

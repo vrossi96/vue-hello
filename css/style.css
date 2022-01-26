@@ -1,8 +1,28 @@
+body {
+   background-color: rgba(0, 0, 0, 0.39);
+   color: white;
+}
+
 .container {
    height: 100vh;
 }
 
 #main-row {
    height: 100%;
+}
+
+input {
+   border: 1px solid grey;
+   border-radius: 9px;
+}
+
+.col-6 > .row {
    border: 1px solid black;
+}
+
+.col-6 .row:first-child {
+   border-radius: 15px 15px 0 0;
+}
+.col-6 .row:last-child {
+   border-radius: 0 0 15px 15px;
 }
