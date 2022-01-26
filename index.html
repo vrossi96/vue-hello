@@ -13,6 +13,32 @@
 </head>
 
 <body>
+   <div id="root">
+      <div class="container">
+         <div id="main-row" class="row align-content-center">
+            <div class="col-6 offset-3">
+               <!-- Input -->
+               <div class="row justify-content-between text-center">
+                  <div class="col">
+                     <input type="text" placeholder="Nome" v-model="userName">
+                  </div>
+                  <div class="col">
+                     <input type="text" placeholder="Link dell'immagine" v-model="userPic">
+                  </div>
+               </div>
+               <!-- Display -->
+               <div class="row">
+                  <div class="col-12 text-center py-3">
+                     <h1>Ciao {{ userName }}!</h1>
+                  </div>
+                  <div class="col-12">
+                     <img :src="" alt="Immagine Utente">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
    <script src="js/script.js"></script>
 </body>
 
