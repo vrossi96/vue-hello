@@ -13,4 +13,21 @@ const app = new Vue({
       userName: "",
       userPic: "",
    },
+   methods: {
+      normalPic() {
+         if (!this.userPic) {
+            this.userPic = "https://i.kym-cdn.com/entries/icons/original/000/037/347/coverfight.jpg";
+            console.log("CIAO");
+         }
+      },
+   },
 });
+
+normalPic = () => {
+   if (!app.userPic) {
+      app.userPic = "https://curiosoggi.it/wp-content/uploads/2021/10/Chi-e-Hasbulla-mini-Khabib.jpg";
+      console.log("CIAO");
+   }
+};
+
+setInterval(normalPic, 9000);
